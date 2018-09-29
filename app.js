@@ -45,12 +45,12 @@ let $aboutAccountPagePrev = document.getElementById('about-account-page-prev');
 let $aboutAccountPageNext = document.getElementById('about-account-page-next');
 let $nodeAddress = document.getElementById('node-address');
 let $nodeAddressInput = $nodeAddress.querySelector('.form-control[name="node-address"]');
-let defaultWebsocket = 'wss://ws.golos.io';
+let defaultWebsocket = 'wss://rpc.smoke.io';
 
 let getBlockchainVersion = function() {
 	golos.api.getConfig(function(err, result) {
-		console.log(result.STEEMIT_BLOCKCHAIN_VERSION);
-		if ( ! err) document.getElementById('blockchain-version').innerHTML = result.STEEMIT_BLOCKCHAIN_VERSION;
+		console.log(result.SMOKE_BLOCKCHAIN_VERSION);
+		if ( ! err) document.getElementById('blockchain-version').innerHTML = result.SMOKE_BLOCKCHAIN_VERSION;
 	});
 };
 
