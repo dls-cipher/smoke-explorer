@@ -265,7 +265,22 @@ footer {
     transform: scale(0.75);
     width:600px;
     margin-left: -90px;
+}
+}
 
+@media only screen and (max-width: 480px) {
+  .recent-blocks-class {
+    transform: scale(0.65);
+    width:600px;
+    margin-left: -130px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .recent-blocks-class {
+    transform: scale(0.55);
+    width:600px;
+    margin-left: -160px;
 }
 }
 
