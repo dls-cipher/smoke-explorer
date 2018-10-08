@@ -260,6 +260,16 @@ footer {
   background-color: #343a40;
 }
 
+@media only screen and (max-width: 600px) {
+  .recent-blocks-class {
+    transform: scale(0.75);
+    width:600px;
+    margin-left: -90px;
+    margin-top:-370px;
+    margin-bottom:-370px;
+}
+}
+
 @media (min-width: 992px) {
 .navbar-expand-lg .navbar-collapse {
     display: -webkit-box!important;
